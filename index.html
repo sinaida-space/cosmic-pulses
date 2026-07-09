@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>COSMIC PULSES</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <section id="landing">
+    <h1>COSMIC PULSES</h1>
+    <p class="subtitle">a live visual instrument for the body</p>
+
+    <div class="diagram" aria-hidden="true">
+      <svg viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg">
+        <!-- top view: projector + phone on one side, dancer on the other, light cone between -->
+        <polygon points="40,70 110,40 110,100" fill="none" stroke="#20f0ff" stroke-width="1.5" />
+        <rect x="15" y="55" width="25" height="30" rx="3" fill="none" stroke="#ff2050" stroke-width="1.5" />
+        <rect x="20" y="60" width="15" height="20" rx="2" fill="none" stroke="#eee" stroke-width="1" />
+        <circle cx="230" cy="70" r="12" fill="none" stroke="#eee" stroke-width="1.5" />
+        <line x1="230" y1="82" x2="230" y2="115" stroke="#eee" stroke-width="1.5" />
+        <line x1="230" y1="90" x2="210" y2="105" stroke="#eee" stroke-width="1.5" />
+        <line x1="230" y1="90" x2="250" y2="105" stroke="#eee" stroke-width="1.5" />
+        <line x1="230" y1="115" x2="215" y2="135" stroke="#eee" stroke-width="1.5" />
+        <line x1="230" y1="115" x2="245" y2="135" stroke="#eee" stroke-width="1.5" />
+        <text x="150" y="30" fill="#666" font-size="9" font-family="monospace" text-anchor="middle">room, dark</text>
+      </svg>
+    </div>
+
+    <ol class="steps">
+      <li><span class="num">1</span><span>Place the phone right next to the projector, camera facing you.</span></li>
+      <li><span class="num">2</span><span>Connect the phone to the projector with the video cable.</span></li>
+      <li><span class="num">3</span><span>Make the room dark.</span></li>
+      <li><span class="num">4</span><span>Tap Start and step into the light.</span></li>
+    </ol>
+
+    <button id="start-btn">Start</button>
+
+    <p class="footer">created by <a href="https://sinaida.eu">Sinaida</a></p>
+  </section>
+
+  <section id="performance-view" hidden>
+    <canvas id="gl-canvas"></canvas>
+    <p class="performance-footer">created by <a href="https://sinaida.eu">Sinaida</a></p>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
